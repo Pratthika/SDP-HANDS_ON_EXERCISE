@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Food</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 140px;
+        left: 250px;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+      }
+	      p{
+        color: white;
+        text-align: center;
+      }
+      .food_image {
+        width: 50%;
+        height: 50%;
+      }
+
+      img {
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      span {
+        padding-left: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div style="background-color: powderblue" class="food_image">
+          <img
+            id="titleImage"
+            src="https://uploads-ssl.webflow.com/5e9ebc3fff165933f19fbdbe/61b31c9d289e22335b6753b2_Ice%20Cream%202.jpg"
+            alt="pic3"
+          />
+          <h1 id="titleName">I Love Foods !!</h1>
+        </div>
+        <div style="background-color: yellow" class="food_image">
+          <h3 id="favFood1">Cakes</h3>
+          <p id="foodDescription1">Lots of vegetables keeps you healthy</p>
+          <img id="favFoodImage1"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjKPuLozRC2n4MnlyKlPdTQm6keMAOJnlTwQ&usqp=CAU"
+            alt="pic2"
+          />
+        </div>
+        <div style="background-color: purple" class="food_image">
+          <h3 id="favFood2">Falooda</h3>
+          <p id="foodDescription2">Prepare your own food</p>
+          <img id="favFoodImage2"
+            src="https://sinfullyspicy.com/wp-content/uploads/2022/03/Rose-Falooda-Featured-Image.jpg"
+            alt="pic1"
+          />
+        </div>
+        <div style="background-color: red" class="food_image">
+          <h3 id="favFood3">Pani puri</h3>
+          <p id="foodDescription3">Cheat and eat</p>
+          <img id="favFoodImage3"
+            src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/Pani-Puri.jpg"
+            alt="pic4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("images");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</html>
